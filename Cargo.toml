@@ -1,0 +1,17 @@
+[package]
+name = "rust-style-guide"
+version = "0.1.0"
+edition = "2024"
+description = "A tool for applying Rust coding guidelines"
+license = "MIT"
+repository = "https://github.com/andeya/rust-style-guide"
+readme = "README.md"
+keywords = ["rust", "coding", "guidelines", "style-guide"]
+categories = ["development-tools"]
+authors = ["Andeya Lee <andeyalee@outlook.com>"]
+
+[lib]
+proc-macro = true
+
+[dependencies]
+quote = "1"
