@@ -3,7 +3,7 @@
 A tool for applying [Rust coding guidelines](https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/).
 
 [![Crates.io](https://img.shields.io/crates/v/rust-style-guide)](https://crates.io/crates/rust-style-guide)
-[![License](https://img.shields.io/crates/l/rust-style-guide)](https://github.com/andeya/rust-style-guide?tab=MIT)
+[![License](https://img.shields.io/crates/l/rust-style-guide)](https://github.com/andeya/rust-style-guide?tab=MIT-1-ov-file)
 
 ## Usage
 
