@@ -3,10 +3,7 @@
 A tool for applying [Rust coding guidelines](https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/).
 
 [![Crates.io](https://img.shields.io/crates/v/rust-style-guide)](https://crates.io/crates/rust-style-guide)
-[![Docs](https://shields.io/docsrs/rust-style-guide)](https://docs.rs/rust-style-guide)
-[![CI](https://github.com/andeya/rust-style-guide/actions/workflows/ci.yml/badge.svg)](https://github.com/andeya/rust-style-guide/actions/workflows/ci.yml)
-[![Codecov](https://codecov.io/gh/andeya/rust-style-guide/branch/main/graph/badge.svg)](https://codecov.io/gh/andeya/rust-style-guide)
-[![License](https://img.shields.io/crates/l/rust-style-guide)](https://github.com/andeya/rust-style-guide?tab=Apache-2.0-1-ov-file)
+[![License](https://img.shields.io/crates/l/rust-style-guide)](https://github.com/andeya/rust-style-guide?tab=MIT)
 
 ## Usage
 
