@@ -54,7 +54,7 @@ pub fn global_rustc_clippy_attributes(_args: TokenStream) -> TokenStream {
     #![warn(clippy::float_arithmetic, clippy::float_cmp, clippy::float_cmp_const)]
     // [REQUIRED] G.TYP.FLT.04 Use Rust's built-in methods for floating-point calculations
     #![warn(clippy::imprecise_flops, clippy::suboptimal_flops)]
-    // [REQUIRED] G.TYP.ARR.01 Use static variables instead of constants for large global arrays
+    // [OPTIONAL] G.TYP.ARR.01 Use static variables instead of constants for large global arrays
     #![warn(clippy::large_stack_arrays)]
     // [RECOMMENDED] G.TYP.SCT.01 Add `#[non_exhaustive]` attribute to publicly exported structs
     #![warn(clippy::exhaustive_structs)]

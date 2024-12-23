@@ -7,6 +7,10 @@ A tool for applying [Rust coding guidelines](https://rust-coding-guidelines.gith
 
 ## Usage
 
+> - REQUIRED: Practices that are mandatory to adhere to, reported as an Error.
+> - RECOMMENDED: Recommended best practices, reported as a Warning.
+> - OPTIONAL: Generally accepted best practices, but their implementation depends on the context, reported as Info. For example, when writing infrastructure code, strict measures are often used. However, for rapidly iterating business code, some requirements may be too stringent, and adherence depends on the specific practice context.
+
 ### Method 1
 
 - Run the following Cargo command in your project directory:
@@ -223,7 +227,7 @@ cargo clippy -- -D warnings
 #![warn(clippy::float_arithmetic, clippy::float_cmp, clippy::float_cmp_const)]
 // [REQUIRED] G.TYP.FLT.04 Use Rust's built-in methods for floating-point calculations
 #![warn(clippy::imprecise_flops, clippy::suboptimal_flops)]
-// [REQUIRED] G.TYP.ARR.01 Use static variables instead of constants for large global arrays
+// [OPTIONAL] G.TYP.ARR.01 Use static variables instead of constants for large global arrays
 #![warn(clippy::large_stack_arrays)]
 // [RECOMMENDED] G.TYP.SCT.01 Add `#[non_exhaustive]` attribute to publicly exported structs
 #![warn(clippy::exhaustive_structs)]
