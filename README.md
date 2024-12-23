@@ -7,6 +7,8 @@ A tool for applying [Rust coding guidelines](https://rust-coding-guidelines.gith
 
 ## Usage
 
+Level of Enforcement:
+
 > - REQUIRED: Practices that are mandatory to adhere to, reported as an Error.
 > - RECOMMENDED: Recommended best practices, reported as a Warning.
 > - OPTIONAL: Generally accepted best practices, but their implementation depends on the context, reported as Info. For example, when writing infrastructure code, strict measures are often used. However, for rapidly iterating business code, some requirements may be too stringent, and adherence depends on the specific practice context.
