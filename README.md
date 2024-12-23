@@ -309,7 +309,7 @@ max-fn-params-bools = 3
 # [RECOMMENDED] G.TYP.ENM.06 Variants within an enum should not differ significantly in size. Default is 200 bytes
 enum-variant-size-threshold = 200
 
-# [RECOMMENDED] G.FUD.01 Limit the number of function parameters to no more than five
+# [REQUIRED] G.FUD.01 Limit the number of function parameters to no more than five
 too-many-arguments-threshold = 5
 
 # Determines if wildcard imports in prelude and super (in test modules) should be warned. Default is false
