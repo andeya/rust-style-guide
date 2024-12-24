@@ -1,3 +1,4 @@
+# -------- https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/ --------
 # -------- https://rust-lang.github.io/rustfmt/?search={key} --------
 
 # Run rustfmt with this config (it should be picked up automatically).

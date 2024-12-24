@@ -1,4 +1,5 @@
-# -------- rust-clippy doc: https://rust-lang.github.io/rust-clippy/master/index.html --------
+# -------- https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/ --------
+# -------- https://rust-lang.github.io/rust-clippy/master/index.html --------
 
 # This lint will not trigger if the function is an exported API. This avoids suggesting changes that would break the API. Default is true
 avoid-breaking-exported-api = true
