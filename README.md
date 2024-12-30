@@ -178,18 +178,18 @@ cargo clippy -- -D warnings
 - Configuring Rustc and Clippy lints must be done in `main.rs` or `lib.rs`:
 
 ```rust
+// -------- rust coding guidelines: https://rust-coding-guidelines.github.io/rust-coding-guidelines-zh/ --------
 // -------- rustc lint doc: https://doc.rust-lang.org/rustc/lints/listing/index.html --------
+// -------- rust-clippy doc: https://rust-lang.github.io/rust-clippy/master/index.html --------
 
 // [REQUIRED] G.VAR.02 Do not use non-ASCII characters in identifiers
 #![deny(non_ascii_idents)]
-// -------- rust-clippy doc: https://rust-lang.github.io/rust-clippy/master/index.html --------
-
 // [REQUIRED]
 #![allow(clippy::disallowed_names)]
 // [REQUIRED]
 #![allow(clippy::blanket_clippy_restriction_lints)]
-// [RECOMMENDED] G.CMT.01 Add Error documentation in the docs of public functions that return Result
-#![warn(clippy::missing_errors_doc)]
+// [OPTIONAL] G.CMT.01 Add Error documentation in the docs of public functions that return Result
+// #![warn(clippy::missing_errors_doc)]
 // [REQUIRED] G.CMT.02 Add Panic documentation in the docs of public APIs that may panic under certain circumstances
 #![warn(clippy::missing_panics_doc)]
 // [RECOMMENDED] G.VAR.03 Variable shadowing should be used carefully
@@ -216,7 +216,7 @@ cargo clippy -- -D warnings
 // [RECOMMENDED] G.TYP.BOL.05 Use logical operators (&&/||) instead of bitwise operators (&/|) for boolean operations
 // when not necessary
 #![warn(clippy::needless_bitwise_bool)]
-// [REQUIRED] G.TYP.INT.01 Consider the risks of integer overflow, wrapping, and truncation in integer arithmetic
+// [RECOMMENDED] G.TYP.INT.01 Consider the risks of integer overflow, wrapping, and truncation in integer arithmetic
 #![warn(clippy::arithmetic_side_effects)]
 // [REQUIRED] G.TYP.INT.02 Avoid `as` casting between signed and unsigned integers; use safe conversion functions
 #![deny(clippy::cast_sign_loss)]
@@ -230,13 +230,13 @@ cargo clippy -- -D warnings
 // [REQUIRED] G.TYP.FLT.04 Use Rust's built-in methods for floating-point calculations
 #![warn(clippy::imprecise_flops, clippy::suboptimal_flops)]
 // [OPTIONAL] G.TYP.ARR.01 Use static variables instead of constants for large global arrays
-#![warn(clippy::large_stack_arrays)]
+// #![warn(clippy::large_stack_arrays)]
 // [RECOMMENDED] G.TYP.SCT.01 Add `#[non_exhaustive]` attribute to publicly exported structs
 #![warn(clippy::exhaustive_structs)]
 // [RECOMMENDED] G.TYP.ENM.05 Add `#[non_exhaustive]` attribute to publicly exported enums
 #![warn(clippy::exhaustive_enums)]
-// [RECOMMENDED] G.TYP.SCT.02 Consider refactoring when a struct contains more than three boolean fields
-#![warn(clippy::struct_excessive_bools)]
+// [OPTIONAL] G.TYP.SCT.02 Consider refactoring when a struct contains more than three boolean fields
+// #![warn(clippy::struct_excessive_bools)]
 // [RECOMMENDED] G.FUD.03 Consider using a custom struct or enum instead of many boolean parameters in function
 // signatures
 #![warn(clippy::fn_params_excessive_bools)]
@@ -244,8 +244,8 @@ cargo clippy -- -D warnings
 #![warn(clippy::enum_glob_use)]
 // [RECOMMENDED] G.CTF.02 Ensure `else` branches are present whenever `else if` is used
 #![warn(clippy::else_if_without_else)]
-// [RECOMMENDED] G.STR.02 Use `push_str` method for appending strings
-#![warn(clippy::string_add_assign, clippy::string_add)]
+// [OPTIONAL] G.STR.02 Use `push_str` method for appending strings
+// #![warn(clippy::string_add_assign, clippy::string_add)]
 // [RECOMMENDED] G.STR.03 Convert string literals containing only ASCII characters to byte sequences using `b"str"`
 // syntax instead of `as_bytes()`
 #![warn(clippy::string_lit_as_bytes)]
@@ -255,13 +255,13 @@ cargo clippy -- -D warnings
 #![warn(clippy::large_types_passed_by_value)]
 // [RECOMMENDED] G.FUD.04 Pass small `Copy` type values by value instead of by reference
 #![warn(clippy::trivially_copy_pass_by_ref)]
-// [RECOMMENDED] G.FUD.05 Avoid using `inline(always)` for functions indiscriminately
-#![warn(clippy::inline_always)]
+// [OPTIONAL] G.FUD.05 Avoid using `inline(always)` for functions indiscriminately
+// #![warn(clippy::inline_always)]
 // [REQUIRED] G.GEN.02 Be cautious to avoid using generic default implementations of some methods from Rust's standard
 // library; prefer specific type implementations
 #![warn(clippy::inefficient_to_string)]
-// [RECOMMENDED] G.TRA.BLN.01 Prefer using the concrete type's `default()` method over calling `Default::default()`
-#![warn(clippy::default_trait_access)]
+// [OPTIONAL] G.TRA.BLN.01 Prefer using the concrete type's `default()` method over calling `Default::default()`
+// #![warn(clippy::default_trait_access)]
 // [REQUIRED] G.TRA.BLN.02 Do not implement the `Copy` trait for iterators
 #![warn(clippy::copy_iterator)]
 // [RECOMMENDED] G.TRA.BLN.07 Use `copied` method instead of `cloned` for iterable `Copy` types
